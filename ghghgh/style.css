@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Навигация */
+header {
+    background: #111c33;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* Главный экран */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 23px;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+/* Аватар */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 50px #38bdf855;
+}
+
+.avatar span {
+    font-size: 100px;
+}
+
+/* Обо мне */
+.about,
+.contacts {
+    padding: 70px 10%;
+    text-align: center;
+    background: #17233b;
+}
+
+.about h2,
+.contacts h2 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* Контакты */
+.contacts {
+    background: #0f172a;
+}
+
+.contacts p {
+    margin: 15px;
+    color: #cbd5e1;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111c33;
+    color: #94a3b8;
+}
+
+/* Адаптация под телефон */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .avatar span {
+        font-size: 75px;
+    }
+}
